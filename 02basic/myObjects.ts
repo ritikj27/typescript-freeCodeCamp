@@ -1,31 +1,31 @@
-const User = {
-    name: "hitesh",
-    email: "hitesh@lco.dev",
-    isAvtive: true
-}
+// const User = {
+//     name: "hitesh",
+//     email: "hitesh@lco.dev",
+//     isAvtive: true
+// }
 
-function createUser({name: string, isPaid: boolean}){}
+// function createUser({name: string, isPaid: boolean}){}
 
-let newUser = {name: "hitesh", isPaid: false, email: "h@h.com"}
+// let newUser = {name: "hitesh", isPaid: false, email: "h@h.com"}
 
-createUser(newUser)
-
-
-
-function createCourse():{name: string, price: number}{
-    return {name: "reactjs", price: 399}
-}
+// createUser(newUser)
 
 
-// type User = {
-//     name: string;
-//     email: string;
-//     isActive: boolean
+
+// function createCourse():{name: string, price: number}{
+//     return {name: "reactjs", price: 399}
 // }
 
 
-// function createUser(user: User): User{
-//     return {name: "", email: "", isActive: true}
-// }
+type User = {
+    name: string;
+    email: string;
+    isActive: boolean
+}
 
-// createUser({name: "", email: "", isActive: true})
+
+function createUser(user: User): User{
+    return {name: "", email: "", isActive: true}
+}
+
+createUser({name: "", email: "", isActive: true})
