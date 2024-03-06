@@ -10,22 +10,49 @@
 
 // createUser(newUser)
 
-
-
 // function createCourse():{name: string, price: number}{
 //     return {name: "reactjs", price: 399}
 // }
 
-
 type User = {
-    name: string;
-    email: string;
-    isActive: boolean
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+
+function createUser(_user: User): User {
+  return { name: "", email: "", isActive: true };
 }
 
+createUser({ name: "", email: "", isActive: true });
 
-function createUser(user: User): User{
-    return {name: "", email: "", isActive: true}
-}
+// readonly we can not change this
+//?: are help for optional
+type myUser = {
+  readonly _id: string;
+  name: string;
+  email: string;
+  cardNum?: number;
+};
 
-createUser({name: "", email: "", isActive: true})
+let newUser: myUser = {
+  _id: "123",
+  name: "hl",
+  email: "R@gmail.com",
+};
+// newUser._id ='2344'
+type cardNumber = {
+  cardnumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
+
+// myUser.email = "h@gmail.com"
+// myUser._id = "asa"
