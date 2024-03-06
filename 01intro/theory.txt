@@ -1,0 +1,15 @@
+type
+Number
+String
+Boolean
+NuLL
+undefined
+void
+array
+object
+Tuples
+Any
+Never
+Unknow
+
+let varNmae:type = vlue
