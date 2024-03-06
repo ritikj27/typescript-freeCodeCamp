@@ -1,0 +1,3 @@
+#what typescript does : static checking (only job) , it help us to write pricse code, that actully helps as to write less error code .
+#typescript is development tool
+#it is superset of javascript
