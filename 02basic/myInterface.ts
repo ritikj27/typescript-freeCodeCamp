@@ -8,6 +8,9 @@ interface UserI {
     getCoupon(couponname: string, value: number): number
 }
 
+//interface as feture of re openig and inheritance feature
+//type cant be re open but it can inheritance using intersection
+
 interface UserI {
     githubToken: string
 }
