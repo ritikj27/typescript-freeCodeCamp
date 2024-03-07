@@ -4,7 +4,7 @@ const heroPower: Array<number> = []
 
 type UserA = {
     name: string
-    isActive: boolean
+    isActive?: boolean
 }
 
 const allUsers: UserA[] = []
@@ -18,4 +18,4 @@ const MLModels: number[][] = [
 superHeros.push("spiderman")
 heroPower.push(2)
 
-allUsers.push({name: "", isActive: true})
+allUsers.push({name: ""})
