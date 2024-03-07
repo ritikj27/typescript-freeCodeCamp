@@ -1,19 +1,34 @@
 "use strict";
-console.log("hello");
-// class User{
-//     private name:string
-//     public email:string
-//     public city:string = 'indore'
-//     constructor(name:string,email:string){
-//         this.name = name;
+// class User {
+//     public email: string
+//     private name: string
+//     readonly city: string = "Jaipur"
+//     constructor(email: string, name: string){
 //         this.email = email;
+//         this.name = name
 //     }
 // }
 class User {
-    constructor(name, email, userId) {
-        this.name = name;
+    constructor(email, name) {
         this.email = email;
-        this.userId = userId;
+        this.name = name;
+        this._courseCount = 1;
+        this.city = "Jaipur";
+    }
+    deleteToken() {
+        console.log("Token deleted");
+    }
+    get getAppleEmail() {
+        return `apple${this.email}`;
+    }
+    get courseCount() {
+        return this._courseCount;
+    }
+    set courseCount(courseNum) {
+        if (courseNum <= 1) {
+            throw new Error("Course count should be more than 1");
+        }
+        this._courseCount = courseNum;
     }
 }
-const user = new User("h", "@gmail.com", '123');
+// const user = new User("h", "@gmail.com",'123');
