@@ -9,7 +9,8 @@
 //     }
 // }
 class User {
-    constructor(email, name) {
+    constructor(email, name // private userId: string
+    ) {
         this.email = email;
         this.name = name;
         this._courseCount = 1;
@@ -29,6 +30,15 @@ class User {
             throw new Error("Course count should be more than 1");
         }
         this._courseCount = courseNum;
+    }
+}
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
     }
 }
 // const user = new User("h", "@gmail.com",'123');
