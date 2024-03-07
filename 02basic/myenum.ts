@@ -1,3 +1,5 @@
+
+// enum are readonly properties
 enum SeatChoice {
     AISLE = "aisle",
     MIDDLE = 3,
@@ -6,3 +8,8 @@ enum SeatChoice {
 }
 
 const hcSeat = SeatChoice.AISLE
+
+const obj ={
+   name:'name'
+}
+obj.name = 'rit'
