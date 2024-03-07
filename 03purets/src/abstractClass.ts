@@ -22,6 +22,6 @@ class youtube extends TakePhoto {
   }
 }
 
-const hc = new youtube("test", "Test", 3)
+const hc = new youtube("test", "Test", 3);
 
-hc.getReelTime()
+hc.getReelTime();
