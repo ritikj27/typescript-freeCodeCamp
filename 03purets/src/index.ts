@@ -1,13 +1,15 @@
-console.log("hello")
-class User{
-    name:string
-    email:string
-    city:string = 'indore'
-    constructor(name:string,email:string){
-        this.name = name,
-        this.email = email;
-    }
+console.log("hello");
+// class User{
+//     private name:string
+//     public email:string
+//     public city:string = 'indore'
+//     constructor(name:string,email:string){
+//         this.name = name;
+//         this.email = email;
+//     }
+// }
+class User {
+  constructor(public name: string, public email: string,private userId:string) {}
 }
 
-const user = new User('h','@gmail.com')
-user.city='ri'
+const user = new User("h", "@gmail.com",'123');
