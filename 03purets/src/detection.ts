@@ -24,3 +24,16 @@ function printAll(strs: string | string[] | null) {
     }
   }
 }
+
+interface User {
+  name: string;
+  email: string;
+}
+interface Admin extends User {
+  isAdmin: string;
+}
+function isAdminCheck(val: Admin | User) {
+  if ("isAdmin" in val) {
+    console.log(val.isAdmin);
+  }
+}
